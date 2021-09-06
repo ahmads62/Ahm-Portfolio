@@ -18,11 +18,11 @@ AS A marketing agency I WANT a codebase that follows accessibility standards SO 
 
 ### Desktop Screen Images
 Header / Nav / Hero
-![Header-Nav](./assets/images/portfolio-1.jpg?raw=true "Header")
+![Header-Nav](./assets/images/portfolio-1.JPG?raw=true "Header")
 Main / Body / Footer
-![Body-Main](./assets/images/portfolio-2.jpg?raw=true "Main")
+![Body-Main](./assets/images/portfolio-2.JPG?raw=true "Main")
 Work
-![Body-Work](./assets/images/portfolio-3.jpg?raw=true "Work")
+![Body-Work](./assets/images/portfolio-3.JPG?raw=true "Work")
 
 
 ### Links
