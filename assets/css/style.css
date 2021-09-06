@@ -542,9 +542,7 @@ footer a {
     grid-row: 4 / span 2;
     /* Push away the work container from the about me grid containter */
     padding-bottom: 10px;
-
-}
-
+  }
   .work-wrapper {
     margin-top: 15px;
   }
@@ -646,33 +644,24 @@ footer a {
 @media screen and  (max-width: 575px) {
   /* Start of footer grid smaller screen code changes at res */
 
+  .logo {
+    margin: .25em 0;
+    align-self: left; /* align the logo to the left side of 'flex-container' */
+}
   
-  /* Start of semantic elents code changes */
-  header a {
-    font-size: 4vw;
-  }
-
-  header nav ul {
-    padding-right: 0px;
-    justify-content: center;
+  .navigation {
+    flex-direction: column;
   }
   
-  header nav ul li {
-    padding: 2px 2px 2px 2px;
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
   }
-
-  p{
-    font-size:5vw;
-  }
-
-  footer a {
-    font-size: 3.5vw;
-  }
-
-  .nav-effects a:hover{
-      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
-      /* This is to avoid as much as possible any changes on text size when pressed */
-      font-size: 4vw; 
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
   }
 
   .footer-container a:hover{
