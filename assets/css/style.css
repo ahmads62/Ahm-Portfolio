@@ -232,7 +232,7 @@ footer a {
 
 .work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
   grid-column: 2 / span 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 6;
   background-image: url("../images/refactor-code.JPG");
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
@@ -257,26 +257,12 @@ footer a {
 }
 
 .work-item-project.password-generator {
-  grid-column: 2 / span 1;
-  grid-row: 4 / span 3; 
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 3; 
   /* Royalty free image */
   background-image: url("../images/work-progress.jpeg");
   background-size: cover;
   /* Allow the background image to align */
-  display: flex; /*Flex required to move the element as flex */
-  align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
-  padding-bottom: 15px;
-  text-align: left;
-  border: .25vw solid var(--rgba-border-color-opacity);
-}
-
-.work-item-project.web-api-code-quiz {
-  grid-column: 4 / span 1;
-  grid-row: 1 / span 3;
-  /* Royalty free image */
-  background-image: url("../images/coming-soon.jpeg");
-  background-size: 300px 200px, cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
   padding-left: 0px;
@@ -506,47 +492,33 @@ footer a {
 }
 
 /* This will be applied on any screen smaller than 768px */
-@media screen and (max-width: 768px) {
-  /* Start of footer grid smaller screen code changes at res */
-
-  /* Start of semantic elents code changes */
-  header a {
-    /* Allow screen changes relatively to the viewport of the width available*/
-    font-size: 3vw;
+@media all and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
   }
-
-  footer a {
-    font-size: 3vw;
+  
+  .logo {
+  margin: 0;
   }
-
-
-  /* End of semantic elents code changes */
-
-  /* Start of class code changes */
-  .nav-effects a:hover{
-      /* Zoom in effect removed - this is matching the size of the text that is being hoverd*/
-      /* This is to avoid as much as possible any changes on text size when pressed */
-      font-size: 3vw; 
+  
+  .navigation  {
+    width: 100%;
+    justify-content: space-around;
   }
-
-  .footer-container a:hover{
-    font-size: 1.8vw;
-  }
-
-  /* Change image attachment to scroll to avoid following the image */
-  /* This partially works on android phones tested, it does not work in IO's as of December 13, 2020 */
-  .hero {
-    background-attachment: scroll;
-  }
-    
+  .hero-subtitle {
+    padding-right: 30px;
+  }  
+ /* Start of about me grid smaller screen code changes */
+  .about-me-wrapper {
+    margin-top: 20px;
+  }  
   .about-me-grid-container {/*CSS Grid*/
-    /* Create a 3X6 grid for smaler screen with one column .5fr or smaller than 1 fraction of the other 4 rows */
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: .5fr repeat(4, 1fr);
+    /* Create a 3X6 grid for smaler screen */
+    grid-template-columns: 1fr ; 
+    grid-template-rows: 1fr;
     /* Gap on x and y grid */
     gap: 5px 5px; 
   }
-
   /* Target the about me text only */
   .about-me-item.about-me-title {
     padding-top: 0px;
@@ -558,16 +530,20 @@ footer a {
     padding-bottom: 0px;
     border-right: none;
     border-bottom: 2px solid var(--about-me-work-border);
-    align-self: start;
   }
+  .about-me-item.p1 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+  }
+  .about-me-item.p2 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+    /* Push away the work container from the about me grid containter */
+    padding-bottom: 10px;
 
-  .about-me-item.p1 { /* Avoid too much space in the paragraph by removing parent paddings */
-    padding-left: 0px;
-  }
-
-  .about-me-item.p2 { /* Avoid too much space in the paragraph by removing parent paddings */
-    padding-left: 0px;
-  }
+}
 
   .work-wrapper {
     margin-top: 15px;
@@ -607,7 +583,7 @@ footer a {
 
   .work-item-project.run-buddy {
     grid-column: 1 /span 3;
-    grid-row: 5 / span 2;
+    grid-row: 3/ span 3;
     align-items: flex-end;
     text-align: center;
     background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
@@ -615,7 +591,7 @@ footer a {
   
   .work-item-project.password-generator {
     grid-column: 1 /span 3;
-    grid-row: 7 / span 1;
+    grid-row: 4 / span 3;
     /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
     padding-top: 30px;
     background-position: scroll;
