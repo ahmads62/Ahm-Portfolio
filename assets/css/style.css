@@ -224,7 +224,7 @@ footer a {
 .work-item.work-title {
   padding-top: 10px;
   font-size: 35px;
-  grid-row: 1 / span 6;
+  grid-row: 1 / span 30 ;
   text-align: right;
   padding-right: 10px;
   border-right: 2px solid var(--about-me-work-border);
@@ -232,7 +232,7 @@ footer a {
 
 .work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
   grid-column: 2 / span 1;
-  grid-row: 1 / span 6;
+  grid-row: 1 / span 30;
   background-image: url("../images/refactor-code.JPG");
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
@@ -245,7 +245,7 @@ footer a {
 
 .work-item-project.run-buddy {
   grid-column: 3 /span 1;
-  grid-row: 1 / span 3;
+  grid-row: 1 / span 15;
   background-image: url("../images/run-buddy.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -258,7 +258,7 @@ footer a {
 
 .work-item-project.password-generator {
   grid-column: 4 / span 1;
-  grid-row: 1 / span 3; 
+  grid-row: 1 / span 15; 
   /* Royalty free image */
   background-image: url("../images/work-progress.jpeg");
   background-size: cover;
@@ -272,22 +272,22 @@ footer a {
 }
 
 .work-item-project.work-day-scheduler {
-  grid-column: 4 / span 1;
-  grid-row: 4 / span 3;
+  grid-column: 3 / span 1;
+  grid-row: 16 / span 15;
   /* Royalty free image */
   background-image: url("../images/coming-soon.jpeg");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
-  padding-left: 0px;
+  padding-left: 0px;  
   padding-bottom: 15px;
   text-align: left;
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
 .work-item-project.project01-group07 {
-  grid-column: 3 /span 1;
-  grid-row: 4 / span 3;
+  grid-column: 4 /span 1;
+  grid-row: 16 / span 15;
   background-image: url("../images/coming-soon.jpeg");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
@@ -298,16 +298,7 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.ghost-item {
-  grid-column: 4 / span 1;
-  /* Hide Text */
-  opacity: 0;
-  
-}
 /* End of FLEX CSS Main body code Work projects*/
-
-
-/* Start of footer class code */
 
 /* CSS Flex/Grid Footer non-semantic Code */
 .footer-wrapper { /* Flex container */
@@ -437,7 +428,7 @@ footer a {
 
   /* Start of footer grid smaller screen code changes */
   .footer-wrapper {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .footer-container { /* Desided to change the grid flow at this screen size for the footer */
@@ -492,7 +483,7 @@ footer a {
 }
 
 /* This will be applied on any screen smaller than 768px */
-@media all and (max-width: 990px) {
+@media all and (max-width: 770px) {
   .flex-container {
     flex-direction: column;
   }
@@ -552,7 +543,7 @@ footer a {
     /* Will assign size directly to avoid grid span */
     grid-template-columns: repeat(3, 1fr);
     /* .5fr is to fix spacing on main title item */
-    grid-template-rows: .5fr repeat(10, 1fr);
+    grid-template-rows: .5fr repeat(20, 1fr);
     /* Gap on x and y grid */
     gap: 2.5px 2.5px;
   }
@@ -573,7 +564,7 @@ footer a {
 
   .work-item-project.challenge-1-refactor {
     grid-column: 1 / span 3;
-    grid-row: 2 / span 3;
+    grid-row: 2 / span 6;
     align-items: flex-end;
     text-align: center;
     background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
@@ -581,7 +572,7 @@ footer a {
 
   .work-item-project.run-buddy {
     grid-column: 1 /span 3;
-    grid-row: 3/ span 3;
+    grid-row: 8 / span 3;
     align-items: flex-end;
     text-align: center;
     background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
@@ -589,48 +580,28 @@ footer a {
   
   .work-item-project.password-generator {
     grid-column: 1 /span 3;
-    grid-row: 4 / span 3;
+    grid-row: 11 / span 3;
     /* By padding top from run buddy all of my grid grew in size. Allowing proper look. */
     padding-top: 30px;
     background-position: scroll;
     text-align: center;
   }
   
-  .work-item-project.web-api-code-quiz {
+   .work-item-project.work-day-scheduler {
     grid-column: 1 /span 3;
-    grid-row: 8 / span 1;
-    background-position: scroll;
-    text-align: center;
-  }
-  
-  .work-item-project.work-day-scheduler {
-    grid-column: 1 /span 3;
-    grid-row: 9 / span 1;
+    grid-row: 14 / span 3;
     background-position: scroll;
     text-align: center;
   }
 
   .work-item-project.project01-group07  {
     grid-column: 1 /span 3;
-    grid-row: 10 / span 1;
+    grid-row: 17 / span 3;
     align-items: flex-end;
     text-align: center;
     background-position: scroll; /* Forced the image to scroll with the page to avoid any issues at smaller screens */
   }
   
-  /* Ghost item made avialable at smaller screens as I android devices can click it. Ghost item is an inteional practice test */
-  .work-item-project.ghost-item {
-    grid-column: 1 /span 3;
-    grid-row: 11 / span 1;
-    background-image: url("../images/pexels-luizclas-556665.jpg");
-    background-size: cover;
-    display: flex; /*Flex required to move the element as flex */
-    align-items: center; /*Allow text to be at center of grid*/
-    opacity: 1;
-    background-position: scroll;
-    text-align: center;
-  }
-
   .footer-wrapper { /* Get the footer closer to the work grid container at the top*/
   margin-top: 10px;
   }
@@ -663,17 +634,32 @@ footer a {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
-
-  .footer-container a:hover{
-    font-size: 3.5vw;
+  
+  .footer-container { /* Desided to change the grid flow at this screen size for the footer */
+    /*width: 100% since to look better at lower screen size */
+    width: 100%;
+    gap: 2.5px 2.5px; /* Gap on x and y grid */
+    justify-content: space-between;
   }
 
-  /* gap removed from the container loked centered */
-  .footer-container {
-    gap: 0px 0px;
+  /*Extra padding to align as desired depending on different devices tested */
+
+  
+  .footer-grid-item.phone{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;   
   }
 
-  .footer-grid-item.git-hub{ /*Final adjustments*/
-    padding-left: 30px;
+  .footer-grid-item.email{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .footer-grid-item.git-hub{
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
   }
 }
