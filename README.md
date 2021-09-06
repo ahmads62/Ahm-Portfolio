@@ -18,13 +18,16 @@ AS A marketing agency I WANT a codebase that follows accessibility standards SO 
 
 ### Desktop Screen Images
 Header / Nav / Hero
-![Header-Nav](./assets/images/portfolio-1.png?raw=true "Header")
+![Header-Nav](./assets/images/portfolio-1.jpg?raw=true "Header")
 Main / Body / Footer
-![Body-Footer](./assets/images/portfolio-2.png?raw=true "Home Page")
+![Body-Main](./assets/images/portfolio-2.jpg?raw=true "Main")
+Work
+![Body-Work](./assets/images/portfolio-3.jpg?raw=true "Work")
+
 
 ### Links
 * Code Repository Link  (https://github.com/ahmads62/Ahm-Portfolio)
-* Deployed Website Link (https://ahmads62.github.io/Ahm-Portfolio/)
+* Deployed Website Link (https://ahmads62.github.io/Ahm-Portfolio/index.html)
 
 ## Installation
 Upload index.html, and assets folder, assets folder contains images and CSS files.
